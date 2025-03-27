@@ -311,3 +311,7 @@
 27-Mar-2025 12:02:43.140 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [F:\Learning\REPOs\Spring-Security-Real-Steps\SpringSecurity-CustomLogin\conf\Catalina\localhost\ROOT.xml] has finished in [4,463] ms
 27-Mar-2025 12:02:43.143 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
 27-Mar-2025 12:02:43.157 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [4546] milliseconds
+27-Mar-2025 12:06:15.867 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+27-Mar-2025 12:06:16.112 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+27-Mar-2025 12:06:16.644 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+27-Mar-2025 12:06:16.676 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

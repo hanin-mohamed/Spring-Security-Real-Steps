@@ -20,9 +20,12 @@
 <h3>  Hello  </h3>
     <security:authentication property="principal.username"/>
     you are logged in as :  <security:authentication property="principal.authorities"/>
+<security:authorize access="hasRole('ADMIN')">
 <p>
 <a href="${pageContext.request.contextPath}/system"> SystemPage</a>
+    for Admin Only.
 </p>
+</security:authorize>
 <form action="/logout" method="post">
     <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}"/>
     <button type="submit" class="logout-btn">Logout</button>

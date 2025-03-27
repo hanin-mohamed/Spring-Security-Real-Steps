@@ -987,3 +987,47 @@
 27-Mar-2025 15:25:03.976 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
 27-Mar-2025 15:25:04.709 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
 27-Mar-2025 15:25:04.743 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]
+27-Mar-2025 15:59:27.141 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version name:   Apache Tomcat/9.0.91
+27-Mar-2025 15:59:27.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server built:          Jul 2 2024 12:35:51 UTC
+27-Mar-2025 15:59:27.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version number: 9.0.91.0
+27-Mar-2025 15:59:27.147 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Name:               Windows 11
+27-Mar-2025 15:59:27.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log OS Version:            10.0
+27-Mar-2025 15:59:27.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Architecture:          amd64
+27-Mar-2025 15:59:27.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Java Home:             C:\Program Files\Java\jdk-17
+27-Mar-2025 15:59:27.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Version:           17.0.11+7-LTS-207
+27-Mar-2025 15:59:27.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log JVM Vendor:            Oracle Corporation
+27-Mar-2025 15:59:27.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:         F:\Learning\REPOs\Spring-Security-Real-Steps\Acces Based on Role
+27-Mar-2025 15:59:27.148 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:         C:\Program Files\Apache Software Foundation\Tomcat 9.0
+27-Mar-2025 15:59:27.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.lang=ALL-UNNAMED
+27-Mar-2025 15:59:27.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.io=ALL-UNNAMED
+27-Mar-2025 15:59:27.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util=ALL-UNNAMED
+27-Mar-2025 15:59:27.157 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+27-Mar-2025 15:59:27.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+27-Mar-2025 15:59:27.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.home=C:\Program Files\Apache Software Foundation\Tomcat 9.0
+27-Mar-2025 15:59:27.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dcatalina.base=F:\Learning\REPOs\Spring-Security-Real-Steps\Acces Based on Role
+27-Mar-2025 15:59:27.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.io.tmpdir=F:\Learning\REPOs\Spring-Security-Real-Steps\Acces Based on Role\temp
+27-Mar-2025 15:59:27.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.config.file=F:\Learning\REPOs\Spring-Security-Real-Steps\Acces Based on Role\conf\logging.properties
+27-Mar-2025 15:59:27.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+27-Mar-2025 15:59:27.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -javaagent:C:\Program Files\IntelliJ IDEA 2023.3.3\lib\idea_rt.jar=51873:C:\Program Files\IntelliJ IDEA 2023.3.3\bin
+27-Mar-2025 15:59:27.158 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Command line argument: -Dfile.encoding=UTF-8
+27-Mar-2025 15:59:27.165 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent Loaded Apache Tomcat Native library [1.3.0] using APR version [1.7.4].
+27-Mar-2025 15:59:27.165 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+27-Mar-2025 15:59:27.165 INFO [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+27-Mar-2025 15:59:27.180 INFO [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL successfully initialized [OpenSSL 3.0.13 30 Jan 2024]
+27-Mar-2025 15:59:27.485 INFO [main] org.apache.coyote.AbstractProtocol.init Initializing ProtocolHandler ["http-nio-8080"]
+27-Mar-2025 15:59:27.521 INFO [main] org.apache.catalina.startup.Catalina.load Server initialization in [613] milliseconds
+27-Mar-2025 15:59:27.595 INFO [main] org.apache.catalina.core.StandardService.startInternal Starting service [Catalina]
+27-Mar-2025 15:59:27.597 INFO [main] org.apache.catalina.core.StandardEngine.startInternal Starting Servlet engine: [Apache Tomcat/9.0.91]
+27-Mar-2025 15:59:27.617 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deploying deployment descriptor [F:\Learning\REPOs\Spring-Security-Real-Steps\Acces Based on Role\conf\Catalina\localhost\ROOT.xml]
+27-Mar-2025 15:59:29.583 INFO [main] org.apache.jasper.servlet.TldScanner.scanJars At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+27-Mar-2025 15:59:30.024 WARNING [main] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [114] milliseconds.
+27-Mar-2025 15:59:30.096 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Initializing Servlet 'dispatcher'
+27-Mar-2025 15:59:31.979 INFO [main] org.springframework.security.web.DefaultSecurityFilterChain.<init> Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3a8ead9, org.springframework.security.web.context.SecurityContextPersistenceFilter@33f2cf82, org.springframework.security.web.header.HeaderWriterFilter@3601549f, org.springframework.security.web.csrf.CsrfFilter@6e90cec8, org.springframework.security.web.authentication.logout.LogoutFilter@53fc870f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@671f545b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73852720, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@512dc0e0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@281ca256, org.springframework.security.web.session.SessionManagementFilter@1b9c716f, org.springframework.security.web.access.ExceptionTranslationFilter@1e6bd367, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78508e6b]
+27-Mar-2025 15:59:32.630 INFO [main] org.springframework.web.servlet.FrameworkServlet.initServletBean Completed initialization in 2534 ms
+27-Mar-2025 15:59:32.643 INFO [main] org.apache.catalina.startup.HostConfig.deployDescriptor Deployment of deployment descriptor [F:\Learning\REPOs\Spring-Security-Real-Steps\Acces Based on Role\conf\Catalina\localhost\ROOT.xml] has finished in [5,025] ms
+27-Mar-2025 15:59:32.648 INFO [main] org.apache.coyote.AbstractProtocol.start Starting ProtocolHandler ["http-nio-8080"]
+27-Mar-2025 15:59:32.667 INFO [main] org.apache.catalina.startup.Catalina.start Server startup in [5145] milliseconds
+27-Mar-2025 16:02:04.556 INFO [Thread-1] org.apache.coyote.AbstractProtocol.pause Pausing ProtocolHandler ["http-nio-8080"]
+27-Mar-2025 16:02:04.725 INFO [Thread-1] org.apache.catalina.core.StandardService.stopInternal Stopping service [Catalina]
+27-Mar-2025 16:02:04.782 INFO [Thread-1] org.apache.coyote.AbstractProtocol.stop Stopping ProtocolHandler ["http-nio-8080"]
+27-Mar-2025 16:02:04.806 INFO [Thread-1] org.apache.coyote.AbstractProtocol.destroy Destroying ProtocolHandler ["http-nio-8080"]

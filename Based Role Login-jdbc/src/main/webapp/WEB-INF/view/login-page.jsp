@@ -60,6 +60,9 @@
             <button type="submit">Login</button>
         </div>
     </form:form>
+    <p style="text-align: center;">
+        Don't have an account? <a href="/register">Register here</a>
+    </p>
 </div>
 </body>
 </html>

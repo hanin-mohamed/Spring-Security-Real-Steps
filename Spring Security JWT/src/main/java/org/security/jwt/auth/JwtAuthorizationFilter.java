@@ -18,7 +18,6 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 @Component
-@Order(1)
 public class JwtAuthorizationFilter extends OncePerRequestFilter {
 
     @Autowired
@@ -36,9 +35,7 @@ public class JwtAuthorizationFilter extends OncePerRequestFilter {
             System.out.println("Token: " + token);
 
             Claims claims = jwtService.resolveClaims(request);
-
-            if (claims !=null  & !jwtService.isTokenExpired(claims.getExpiration())){
-
+            if (claims != null & !jwtService.isTokenExpired(claims.getExpiration())) {
                 String email = claims.getSubject();
                 System.out.println("email : "+email);
                 Authentication authentication = new UsernamePasswordAuthenticationToken(email, "",new ArrayList<>());
@@ -50,5 +47,10 @@ public class JwtAuthorizationFilter extends OncePerRequestFilter {
         }
         filterChain.doFilter(request, response);
 
+    }
+    @Override
+    protected boolean shouldNotFilter(HttpServletRequest request) {
+        String path = request.getRequestURI();
+        return path.startsWith("/auth/login");
     }
 }

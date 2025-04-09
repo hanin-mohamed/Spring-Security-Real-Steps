@@ -15,7 +15,6 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
-import java.security.Security;
 
 @Configuration
 @EnableWebSecurity
@@ -28,9 +27,6 @@ public class SecurityConfig {
     @Autowired
     private  JwtAuthorizationFilter jwtAuthorizationFilter;
 
-
-
-
     @Bean
     public AuthenticationManager authenticationManager(HttpSecurity http, NoOpPasswordEncoder noOpPasswordEncoder) throws Exception {
         AuthenticationManagerBuilder managerBuilder = http.getSharedObject(AuthenticationManagerBuilder.class);
@@ -42,7 +38,8 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.csrf().disable()
                 .authorizeRequests()
-                .requestMatchers(("/auth/**")).permitAll()
+                .requestMatchers(("/auth/**"))
+                .permitAll()
                 .anyRequest()
                 .authenticated() // Allow all other requests to be authenticated
                 .and()
@@ -56,7 +53,6 @@ public class SecurityConfig {
     @Bean
     public NoOpPasswordEncoder passwordEncoder() {
         return (NoOpPasswordEncoder) NoOpPasswordEncoder.getInstance();
-
     }
 
 }

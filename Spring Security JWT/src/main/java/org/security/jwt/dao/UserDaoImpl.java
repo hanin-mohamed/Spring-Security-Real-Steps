@@ -12,6 +12,7 @@ public class UserDaoImpl implements UserDao {
         User user = new User(email,"12345");
         user.setFirstName("Hanin");
         user.setLastName("Mohamed");
+
         return user;
     }
 }

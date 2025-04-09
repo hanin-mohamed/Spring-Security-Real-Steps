@@ -2,6 +2,7 @@ package org.security.jwt.controller;
 
 
 import org.security.jwt.entity.User;
+import org.security.jwt.model.JWtResponse;
 import org.security.jwt.model.LoginRequest;
 import org.security.jwt.service.JwtService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,7 +32,7 @@ public class AuthController {
         String email = authentication.getName();
         User user = new User(email, "");
         String token = jwtService.generateToken(user);
-        return ResponseEntity.ok(new LoginRequest(email, token));
+        return ResponseEntity.ok(new JWtResponse(token));
     }
 
 }

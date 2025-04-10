@@ -99,9 +99,8 @@ AuthenticationProvider performs the actual authentication logic by verifying the
 Uses UserDetailsService to fetch the user’s UserDetails.
 Compares the provided credentials with the stored ones.
 Returns an authenticated object if successful, or throws an error if not.
-Role in the Process:
 
-Handles the core verification step during authentication.
+Role in the Process: Handles the core verification step during authentication.
 
 🗯️ Insight (Interview Question):  What if there are multiple AuthenticationProviders?
 
@@ -114,8 +113,8 @@ PasswordEncoder is an interface that handles password hashing and verification t
 
 Hashes passwords during registration (e.g., using BCrypt).
 Verifies passwords during login by comparing the input with the stored hash.
-Role in the Process:
-Ensures passwords are never stored in plain text, protecting them from unauthorized access.
+
+Role in the Process: Ensures passwords are never stored in plain text, protecting them from unauthorized access.
 
 🗯️ Insight (Interview Question):  Why use BCryptPasswordEncoder? 
 
@@ -129,6 +128,7 @@ JwtAuthenticationFilter is a custom filter that validates JSON Web Tokens (JWTs)
 Checks for a JWT in the Authorization header (e.g., Bearer <token>).
 Validates the token (e.g., checks if it’s expired).
 Sets up the security context if the token is valid, or blocks the request if it’s not.
+
 Role in the Process:  Ensures only users with a valid JWT can access protected resources.
 
 🗯️ Insight (Interview Question):  What happens if the JWT is invalid?
@@ -150,9 +150,9 @@ A user submits their info (e.g., username, email, password) to /api/auth/registe
 How Does It Work?
 The password is hashed using PasswordEncoder.
 The user’s data (with a default role like “ROLE_USER”) is saved to the database.
-Components Involved:
-PasswordEncoder for hashing the password.
 
+🗯️ Components Involved: PasswordEncoder for hashing the password.
+ 
 ### 2. Logging In (Authenticate) 🔑
 📍 What Happens?
 
@@ -172,6 +172,7 @@ A JWT is created and sent to the user after successful login.
 How Does It Work?
 The JWT includes the user’s username, roles, and an expiration time (e.g., 24 hours).
 
+🗯️ Components Involved: UserDetails for roles.
 
 ### 4. Accessing Protected Resources (Authorization) 
 The user requests a protected endpoint (e.g., /api/home) with their JWT.
@@ -183,8 +184,7 @@ If valid, the security context is set up with the user’s roles.
 Spring Security checks if the user’s roles allow access to the endpoint.
 Access is granted or denied accordingly.
 
-Components Involved:
-JwtAuthenticationFilter, UserDetails.
+🗯️ Components Involved: JwtAuthenticationFilter, UserDetails.
 
 # The Full Flow in a Nutshell 
 
